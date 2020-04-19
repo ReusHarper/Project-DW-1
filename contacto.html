@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/logo-rf.png">
+
+    <title>Inicio</title>
+</head>
+<body>
+    <!-- <video src="video/video-programacion.mp4" autoplay loop muted poster="#"></video> -->
+    <!-- Imagen -->
+
+    <header>
+
+        <h1 id="saludo"></h1>
+        <img src="img/contacto.jpg" alt="fondo-programando" id="background"><
+
+        <!-- Navegador: -->
+        <nav class="navbar navbar-expand-lg nav-ps">
+
+            <a class="navbar-brand" href="index.html"><img id="logo-rf" src="img/logo-rf.png" class="small-icon"></a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+            <div class="collapse navbar-collapse navbar-nav" id="navbarSupportedContent">
+                <a class="nav-item nav-link nav-a" href="index.html">INICIO</a>
+                <a class="nav-item nav-link nav-a" href="resume.html">RESUME</a>
+                <a class="nav-item nav-link nav-a" href="mantenimiento.html">PROYECTOS</a>
+                <a class="nav-item nav-link nav-a" href="about.html">ACERCA DE MI</a>
+                <a class="nav-item nav-link nav-a" href="mantenimiento.html">BLOG</a>
+                <a class="nav-item nav-link nav-a active disabled" href="contacto.html">CONTACTO</a>
+            </div>
+
+        </nav>
+
+        <div class="container-hd ti-re">
+            <h1>Conéctate conmigo</h1><br>
+            <h1>hoy mismo:)</h1>
+        </div>
+
+    </header>
+
+    <main class="container-wb-mn">
+        <div class="contenedor contenido-centrado">
+
+            <h2 class="fw-300 centrar-texto">Llena el siguiente formulario:</h2>
+
+            <form class="contacto" action="">
+                <fieldset class="border p-2 field_set">
+                    <legend class="scheduler-border">Información Personal</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Tu Nombre">
+
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" placeholder="Tu Correo electrónico" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
+
+                    <label for="mensaje">Mensaje: </label>
+                    <textarea  id="mensaje"></textarea>
+
+                </fieldset>
+
+
+                <fieldset class="border p-2 field_set">
+                    <legend class="scheduler-border">Información sobre la reunión</legend>
+                    <label for="opciones">Desarrollo web, Manejo de base de datos, Proyecto sobre un lenguaje en específico</label>
+                    <select id="opciones">
+                        <option value="" disabled selected>-- Seleccione --</option>
+                        <option value="DW">Desarrollo web</option>
+                        <option value="BD">Manejo de base de datos</option>
+                        <option value="PJ">Proyecto sobre un lenguaje en específico</option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset class="border p-2 field_set">
+                    <legend class="scheduler-border">Contacto</legend>
+
+                    <div class="forma-contacto">
+                        <label for="telefono">Teléfono</label>
+                        <input type="radio" name="contacto" value="telefono" id="telefono">
+
+                        <label for="correo">E-mail</label>
+                        <input type="radio" name="contacto" value="correo" id="correo">
+                    </div>
+
+                    <p>Si eligió Teléfono, elija la fecha y la hora</p>
+                    <br>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha">
+
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" min="09:00" max="18:00">
+
+
+                </fieldset>
+
+                <!-- Boton de acerca de mi -->
+                <div class="buttons">
+                    <a href="about.html" type="button" class="container-bn bt-tx bt-rs animation vt">
+                        Enviar
+                    </a>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="card footer-content text-center">
+            <div class="footer-icons">
+                <a class="navbar-brand" href="index.html"><img id="logo-rf" src="img/logo-rf.png" class="small-icon"></a>
+                <a class="navbar-brand" href="https://www.facebook.com/ReusHarper/" target="_blank"><img id="logo-fb" src="img/facebook.svg" class="small-icon"></a>
+                <a class="navbar-brand" href="https://twitter.com/arturoespinosay" target="_blank"><img id="logo-tw" src="img/twitter.svg" class="small-icon"></a>
+                <a class="navbar-brand" href="https://www.instagram.com/reusharper_7u7_/" target="_blank"><img id="logo-it" src="img/instagram.svg" class="small-icon"></a>
+            </div>
+            <div class="card-body">
+                <p>2020 - Red Flight Company / Todos los derechos reservados D.R. ®</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/cc9da1e1c1.js" crossorigin="anonymous"></script>
+<script type="text/JavaScript" src="js/app.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163541583-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163541583-1');
+</script>
+
+</html>
